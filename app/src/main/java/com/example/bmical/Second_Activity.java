@@ -37,6 +37,7 @@ public class Second_Activity extends AppCompatActivity {
         setContentView(R.layout.second_activity);
 
         init();
+        NumerpickInitiate();
 
     }
 
@@ -61,6 +62,18 @@ public class Second_Activity extends AppCompatActivity {
 
 
 
+
+
+
+        // ADDING LISTENERS :
+        calculatebtn.setOnClickListener(new CalculateListener());
+
+
+    }
+
+
+    public  void NumerpickInitiate(){
+
         // ADDING NUMBERPICKERS :
 
         //Height :
@@ -81,12 +94,6 @@ public class Second_Activity extends AppCompatActivity {
         weightpicker.setMaxValue(120);
 
         weightpicker.setOnValueChangedListener(new WeightValChangeListener());
-
-
-        // ADDING LISTENERS :
-        calculatebtn.setOnClickListener(new CalculateListener());
-
-
     }
 
 
